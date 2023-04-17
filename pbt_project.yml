@@ -1,0 +1,61 @@
+name: ovaledge-prophecy
+description: ''
+version: 0.0.1
+author: harish.pyadindi@ovaledge.com
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: ovaledgeprophecy
+  parentArtefactID: teamovaledge
+  buildSystem: wheel
+  author: null
+  createdAt: '2023-04-17 18:51:11'
+  modifiedAt: '2023-04-17 18:51:11'
+pipelines:
+  pipelines/OE-ADB-PRPHY:
+    name: OE-ADB-PRPHY
+    description: ''
+    author: harish.pyadindi@ovaledge.com
+    mode: stream
+    artefactID: ''
+    language: python
+    createdAt: '2023-04-17 18:51:11'
+    modifiedAt: '2023-04-17 19:32:59'
+    datasets:
+      inputs:
+      - datasets/datasetoe
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/datasetoe:
+    name: datasetoe
+    description: ''
+    author: harish.pyadindi@ovaledge.com
+    createdAt: '2023-04-17 19:32:12'
+    modifiedAt: '2023-04-17 19:32:12'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 1908
+        datasetType: Warehouse
+        description: ''
+        author: harish.pyadindi@ovaledge.com
+        createdAt: '2023-04-17 19:32:12'
+        modifiedAt: '2023-04-17 19:32:12'
+templates: {}
+jobs: {}
+functions:
+  author: null
+  createdAt: '2023-04-17 18:51:11'
+  modifiedAt: '2023-04-17 18:51:11'
+  gems: {}
+  udfs: {}
+  udafs: {}
+  expressions: {}
+subgraphs: {}
+sqlModels: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies: {}
+pipelineConfigurations: {}

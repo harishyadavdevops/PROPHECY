@@ -1,0 +1,157 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "1908",
+    "frontEndLanguage" : "sql",
+    "mode" : "stream",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "teamovaledge.ovaledgeprophecy.functions",
+      "sharedFunctionPackageNames" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "oeadbprphy",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "Vcg-L6jAWU80ZU6rxgeBF",
+    "source" : "cggslVlbzWt3KeaHREl7f$$PQPpm2cyQ35eWf2DSY2xa",
+    "sourcePort" : "x2D08IdV7LlnVvkOdp97Z$$4cJPRG_N67afxIJIVLARj",
+    "target" : "hBJTW1fJ_C_kNZYyqCNqi$$JIpYiDV8l1zZenLiTODm2",
+    "targetPort" : "Kz-3F4Yx1CZpsDNz3p4X8$$iNKJS27W5HD-gk-aXNt_4"
+  } ],
+  "processes" : {
+    "cggslVlbzWt3KeaHREl7f$$PQPpm2cyQ35eWf2DSY2xa" : {
+      "id" : "cggslVlbzWt3KeaHREl7f$$PQPpm2cyQ35eWf2DSY2xa",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "datasetoe",
+        "slug" : "datasetoe",
+        "x" : -520,
+        "y" : -80,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "x2D08IdV7LlnVvkOdp97Z$$4cJPRG_N67afxIJIVLARj",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/datasetoe"
+      }
+    },
+    "hBJTW1fJ_C_kNZYyqCNqi$$JIpYiDV8l1zZenLiTODm2" : {
+      "id" : "hBJTW1fJ_C_kNZYyqCNqi$$JIpYiDV8l1zZenLiTODm2",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : -120,
+        "y" : -60,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Kz-3F4Yx1CZpsDNz3p4X8$$iNKJS27W5HD-gk-aXNt_4",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "994PczKqCumd1UNT8o3Bh$$2nUG_6puPjrOix7XF4I0a",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "true"
+        }
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.cggslVlbzWt3KeaHREl7f$$PQPpm2cyQ35eWf2DSY2xa.properties.dataset.schema",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "Missing Schema. Please infer schema or provide it manually.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.hBJTW1fJ_C_kNZYyqCNqi$$JIpYiDV8l1zZenLiTODm2",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
+}
